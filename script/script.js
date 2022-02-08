@@ -3,8 +3,9 @@ window.onload = function() {
     //div position
     var top1 = $("#ov").offset().top;
     var top2 = $("#sco").offset().top;
-    var top3 = $("#prog").offset().top;
-    var top4 = $("#org").offset().top;
+    var top3 = $("#keyn").offset().top;
+    var top4 = $("#prog").offset().top;
+    var top5 = $("#org").offset().top;
     
     $("#h").click(function() {
         $('html, body').animate({
@@ -20,6 +21,11 @@ window.onload = function() {
     $("#hsco").click(function() {
         $('html, body').animate({
             scrollTop: $("#sco").offset().top-70
+        }, 300);
+    });
+    $("#hkeyn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#keyn").offset().top-70
         }, 300);
     });
     $("#hprog").click(function() {
@@ -38,6 +44,7 @@ window.onload = function() {
             $("#h").addClass("current_a");
             $("#hov").removeClass("current_a");
             $("#hsco").removeClass("current_a");
+            $("#hkeyn").removeClass("current_a");
             $("#hprog").removeClass("current_a");
             $("#horg").removeClass("current_a");
         }
@@ -45,6 +52,7 @@ window.onload = function() {
             $("#h").removeClass("current_a");
             $("#hov").addClass("current_a");
             $("#hsco").removeClass("current_a");
+            $("#hkeyn").removeClass("current_a");
             $("#hprog").removeClass("current_a");
             $("#horg").removeClass("current_a");
         }
@@ -52,6 +60,7 @@ window.onload = function() {
             $("#h").removeClass("current_a");
             $("#hov").removeClass("current_a");
             $("#hsco").addClass("current_a");
+            $("#hkeyn").removeClass("current_a");
             $("#hprog").removeClass("current_a");
             $("#horg").removeClass("current_a");
         }
@@ -59,13 +68,23 @@ window.onload = function() {
             $("#h").removeClass("current_a");
             $("#hov").removeClass("current_a");
             $("#hsco").removeClass("current_a");
-            $("#hprog").addClass("current_a");
+            $("#hkeyn").addClass("current_a");
+            $("#hprog").removeClass("current_a");
             $("#horg").removeClass("current_a");
         }
         if($(window).scrollTop() > top4-71) {
             $("#h").removeClass("current_a");
             $("#hov").removeClass("current_a");
             $("#hsco").removeClass("current_a");
+            $("#hkeyn").removeClass("current_a");
+            $("#hprog").addClass("current_a");
+            $("#horg").removeClass("current_a");
+        }
+        if($(window).scrollTop() > top5-71) {
+            $("#h").removeClass("current_a");
+            $("#hov").removeClass("current_a");
+            $("#hsco").removeClass("current_a");
+            $("#hkeyn").removeClass("current_a");
             $("#hprog").removeClass("current_a");
             $("#horg").addClass("current_a");
         }
