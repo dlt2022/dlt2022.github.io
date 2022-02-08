@@ -47,16 +47,7 @@ header {
     padding: 6em;
     text-align: center;
     color: #FFF;
-}
-
-#green{
-    background-image: url(../imgs/backg.jpg);
-}
-#blue{
-    background-image: url(../imgs/backg.png);
-}
-#red{
-    background-image: url(../imgs/backgr.png);
+	background-image: url(../imgs/backgr.png);
 }
 
 #sfondo{
