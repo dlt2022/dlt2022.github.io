@@ -281,6 +281,12 @@ footer a:hover {
     font-weight: bold;
 }
 
+.dark_coffee {
+    background: rgb(71, 71, 71) !important;
+    color: #fff;
+    font-weight: bold;
+}
+
 .tab_prog_az tr:hover {
     background: #CF040F !important;
     color: #fff;
