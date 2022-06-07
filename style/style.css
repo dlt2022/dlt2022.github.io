@@ -239,7 +239,9 @@ footer a:hover {
 }
 
 .div_cell img {
-    height: 7em;
+    height: 50;
+    width: auto;
+    align-items: center;
     border-radius: 100%;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
